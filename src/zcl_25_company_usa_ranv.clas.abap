@@ -1,0 +1,21 @@
+CLASS zcl_25_company_usa_ranv DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES zif_08_co_company_ranv.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_25_COMPANY_USA_RANV IMPLEMENTATION.
+
+
+  METHOD zif_08_co_company_ranv~define_company.
+    rv_company = 'Company USA'.
+  ENDMETHOD.
+ENDCLASS.

@@ -1,0 +1,18 @@
+CLASS zcl_67_observer_ranv DEFINITION ABSTRACT
+  PUBLIC
+*  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS on_modified_state ABSTRACT
+      FOR EVENT modified_state OF zcl_66_processes_ranv
+      IMPORTING ev_new_state.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_67_OBSERVER_RANV IMPLEMENTATION.
+ENDCLASS.

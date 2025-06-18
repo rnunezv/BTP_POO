@@ -1,0 +1,21 @@
+CLASS zcl_lab_31_org_france_ranv DEFINITION INHERITING FROM zcl_lab_29_organization_ranv
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS: get_location REDEFINITION.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_LAB_31_ORG_FRANCE_RANV IMPLEMENTATION.
+
+
+  METHOD get_location.
+    rv_location = 'France'.
+  ENDMETHOD.
+ENDCLASS.

@@ -1,0 +1,21 @@
+CLASS zcl_23_passenger_plane_ranv DEFINITION INHERITING FROM zcl_21_airplane_ranv
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS: airplane_type REDEFINITION.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_23_PASSENGER_PLANE_RANV IMPLEMENTATION.
+
+
+  METHOD airplane_type.
+    rv_airplane_type = 'Passenger Plane'.
+  ENDMETHOD.
+ENDCLASS.

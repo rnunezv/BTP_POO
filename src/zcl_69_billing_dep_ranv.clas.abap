@@ -1,0 +1,22 @@
+CLASS zcl_69_billing_dep_ranv DEFINITION INHERITING FROM zcl_67_observer_ranv
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    DATA state TYPE string.
+    METHODS: on_modified_state REDEFINITION.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_69_BILLING_DEP_RANV IMPLEMENTATION.
+
+
+  METHOD on_modified_state.
+    me->state = ev_new_state.
+  ENDMETHOD.
+ENDCLASS.

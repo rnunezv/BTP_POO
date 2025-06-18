@@ -1,0 +1,21 @@
+CLASS zcl_22_cargo_plane_ranv DEFINITION INHERITING FROM zcl_21_airplane_ranv
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS: airplane_type REDEFINITION.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_22_CARGO_PLANE_RANV IMPLEMENTATION.
+
+
+  METHOD airplane_type.
+    rv_airplane_type = 'Cargo Plane'.
+  ENDMETHOD.
+ENDCLASS.
